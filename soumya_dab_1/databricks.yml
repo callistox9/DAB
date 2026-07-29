@@ -6,6 +6,7 @@ bundle:
 
 include:
   - resources/*.yml
+  - starbiy
 
 artifacts:
   python_artifact:
