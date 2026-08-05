@@ -12,7 +12,7 @@ variables:
   catalog:
     description: The catalog to use
   schema:
-    description: The schema to use
+    description: The schema to use  
 
 targets:
   dev:
@@ -33,9 +33,11 @@ targets:
       host: https://dbc-38731c53-f5a0.cloud.databricks.com
       # We explicitly deploy to /Workspace/Users/soumyavirat480@gmail.com to make sure we only have a single copy.
       root_path: /Workspace/Users/soumyavirat480@gmail.com/.bundle/${bundle.name}/${bundle.target}
+    # We are going to use dev schema here also.
     variables:
       catalog: dev_dab
-      schema: prod
+      schema: dev 
     permissions:
+      # This user will have manage access here.
       - user_name: soumyavirat480@gmail.com
         level: CAN_MANAGE
