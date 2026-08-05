@@ -2,8 +2,8 @@
 
 resources:
   jobs:
-    sample_job:
-      name: sample_job
+    soumya_bundle_1:
+      name: soumya_bundle_1
 
       trigger:
         # Run this job every day, exactly one day from the last run; see https://docs.databricks.com/api/workspace/jobs/create#trigger
@@ -24,7 +24,7 @@ resources:
       tasks:
         - task_key: notebook_task
           notebook_task:
-            notebook_path: ../src/sample_notebook.ipynb
+            notebook_path: ../src/customer_360.ipynb
 
       environments:
         - environment_key: default
