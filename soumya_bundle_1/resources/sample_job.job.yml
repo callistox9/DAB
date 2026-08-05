@@ -30,3 +30,7 @@ resources:
         - environment_key: default
           spec:
             environment_version: "4"
+      # git_source:
+      #   git_branch: dev
+      #   git_provider: gitHub
+      #   git_url: https://github.com/callistox9/DAB.git
